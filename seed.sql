@@ -1,3 +1,15 @@
+-- create DB
+CREATE DATABASE `calendar`
+
+-- create table
+CREATE TABLE `holidays` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `type` int(11) NOT NULL,
+ `date` date NOT NULL,
+ `description` varchar(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
+
 -- Folk Calendar dates
 insert into `holidays` (type, date, description) values (0, '2019-01-01', 'Näärid');
 insert into `holidays` (type, date, description) values (0, '2019-01-06', 'Kolmekuningapäev');
